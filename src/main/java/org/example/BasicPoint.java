@@ -1,5 +1,6 @@
 package org.example;
 import java.util.*;
+import java.util.logging.*;
 
 public class BasicPoint implements Cloneable{
     private final double x;
