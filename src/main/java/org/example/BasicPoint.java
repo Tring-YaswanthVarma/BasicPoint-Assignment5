@@ -18,12 +18,6 @@ public class BasicPoint implements Cloneable{
     public BasicPoint createClone() throws CloneNotSupportedException {
         return (BasicPoint) this.clone();
     }
-    public double getX(){
-        return x;
-    }
-    public double getY(){
-        return y;
-    }
 
 }
 
