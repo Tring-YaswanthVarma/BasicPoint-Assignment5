@@ -16,8 +16,8 @@ public class BasicPoint implements Cloneable{
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public BasicPoint clone() throws CloneNotSupportedException {
+        return (BasicPoint) super.clone();
     }
 }
 
@@ -44,7 +44,7 @@ class Main{
         check = "Objects bp1 and bp2 are equal : " + bp1.checkEqual(bp2);
         l.info(check);
         l.info("After cloning");
-        bp2 = (BasicPoint) bp1.clone();
+        bp2 = bp1.clone();
          String s = "Objects bp1 and bp2 are equal : " + bp1.checkEqual(bp2);
         l.info(s);
     }
