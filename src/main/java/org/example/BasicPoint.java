@@ -25,7 +25,7 @@ class Main{
     public static void main(String[] args) throws CloneNotSupportedException {
         double x;
         double y;
-        boolean check;
+        String check;
         Scanner sc = new Scanner(System.in);
         Logger l = Logger.getLogger("com.api.jar");
         l.info("Enter coordinates for first point.");
@@ -41,11 +41,11 @@ class Main{
         y = sc.nextDouble();
         BasicPoint bp2 = new BasicPoint(x,y);
         l.info("Before cloning");
-        check = bp1.checkEqual(bp2);
-        l.info("Objects bp1 and bp2 are equal : " + check);
+        check = "Objects bp1 and bp2 are equal : " + bp1.checkEqual(bp2);
+        l.info(check);
         l.info("After cloning");
         bp2 = bp1.createClone();
-        check = bp1.checkEqual(bp2);
-        l.info("Objects bp1 and bp2 are equal : " + check);
+        check = "Objects bp1 and bp2 are equal : " + bp1.checkEqual(bp2);
+        l.info(check);
     }
 }
