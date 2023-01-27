@@ -45,7 +45,7 @@ class Main{
         l.info(check);
         l.info("After cloning");
         bp2 = bp1.createClone();
-        check = "Objects bp1 and bp2 are equal : " + bp1.checkEqual(bp2);
-        l.info(check);
+         String s = "Objects bp1 and bp2 are equal : " + bp1.checkEqual(bp2);
+        l.info(s);
     }
 }
